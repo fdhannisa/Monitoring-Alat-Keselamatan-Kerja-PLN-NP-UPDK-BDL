@@ -45,6 +45,7 @@ h6 {
   margin-top: 60px;
   padding: 20px 30px;
   transition: all 0.3s;
+  background-color: #fff;
 }
 
 @media (max-width: 1199px) {
@@ -322,11 +323,11 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  background: rgba(246, 249, 255, 0.15);
+  background: rgba(246, 249, 255, 0.10);
 }
 
-.sidebar-nav .nav-link:active {
-  background: rgba(246, 249, 255, 0.30);
+.sidebar-nav .nav-link.active {
+  background: rgba(246, 249, 255, 0.3);
 }
 
 .sidebar-nav .nav-content {
@@ -374,6 +375,11 @@ h6 {
 /*--------------------------------------------------------------
 # Profie Page
 --------------------------------------------------------------*/
+.card-profil {
+  text-align: center;
+  margin: auto;
+  width: 600px;
+}
 .profile .profile-card img {
   max-width: 120px;
 }
@@ -394,36 +400,9 @@ h6 {
   display: inline-block;
   color: rgba(1, 41, 112, 0.5);
   line-height: 0;
-  margin-right: 10px;
   transition: 0.3s;
 }
 
-.profile .profile-card .social-links a:hover {
-  color: #012970;
-}
-
-.profile .profile-overview .row {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.profile .profile-overview .card-title {
-  color: #012970;
-}
-
-.profile .profile-overview .label {
-  font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
-}
-
-.profile .profile-edit label {
-  font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
-}
-
-.profile .profile-edit img {
-  max-width: 120px;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -528,20 +507,15 @@ h6 {
   margin-bottom: 35px;
 }
 
-.card {
+.card-table{
   background-color: #fff;
-  /* Warna latar belakang card, misalnya abu-abu muda */
   padding: 20px;
-  /* Padding untuk menjaga jarak antara konten dengan tepi card */
   border-radius: 8px;
-  /* Memberi radius sudut pada card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Efek bayangan pada card */
 }
 
 .card.chart {
   background-color: #fff;
-  /* Warna latar belakang untuk card chart, misalnya abu-abu lebih gelap */
 }
 .table,
 
@@ -595,7 +569,6 @@ h6 {
 .table tr:first-child th {
   background-color: #164F63;
   color: #fff;
-  /* Warna teks row header */
 }
 
 /*--------------------------------------------------------------
@@ -616,6 +589,40 @@ h6 {
 canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+/*--------------------------------------------------------------
+# Card Petugas
+--------------------------------------------------------------*/
+.card-petugas {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.card-header {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+  display: none;
+  border: 1px solid #ddd;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body li{
+  list-style: none;
 }
 /*--------------------------------------------------------------
 # Footer
