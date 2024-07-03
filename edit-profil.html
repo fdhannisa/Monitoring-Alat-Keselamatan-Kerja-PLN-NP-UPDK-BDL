@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Data Alat</title>
+    <title>Daftar Petugas</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -31,8 +31,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script defer src="assets/js/chart.js"></script>
-    <script defer src="assets/js/chart2.js"></script>
     <!-- =======================================================
   * Template Name: NiceAdmin
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -66,7 +64,7 @@
                     <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                         <i class="bi bi-bell"></i>
                         <span class="badge bg-primary badge-number">4</span>
-                    </a><!-- End Notification Icon -->
+                    </a>
 
                 </li>
                 <li class="nav-item dropdown pe-3">
@@ -79,9 +77,9 @@
 
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
-
+    
         <ul class="sidebar-nav" id="sidebar-nav">
-
+    
             <li class="nav-item">
                 <a class="nav-link " href="index.html">
                     <i class="bi bi-grid"></i>
@@ -89,226 +87,91 @@
                 </a>
             </li>
             <!-- End Dashboard Nav -->
-
+    
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="data-barang.html">
-                    <i class="bi bi-menu-button-wide"></i><span>Data Barang</span>
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse"
+                    href="data-barang.html">
+                    <i class="bi bi-menu-button-wide"></i><span>Data Alat</span>
                 </a>
-
+    
             <li class="nav-item">
                 <a class="nav-link" href="data-petugas.html">
                     <i class="bi bi-person"></i>
                     <span>Daftar Petugas</span>
                 </a>
             </li>
-
+    
             <li class="nav-item">
                 <a class="nav-link" href="jadwal-pemeriksaan.html">
                     <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan</span></i>
                 </a>
             </li>
-            
-            
-            </ul>
-
-
+    
+    
+        </ul>
+    
+    
     </aside><!-- End Sidebar-->
 
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Data Alat</h1>
+            <h1>Profil</h1>
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="data-barang.html">Data Alat</a></li>
+                    <li class="breadcrumb-item"><a href="profil.html">Profil</a></li>
                 </ol>
             </nav>
-        </div><!-- End Page Title -->
-
-<div class="container">
-
-        <ul>
-            <li>
-                <h6>Perangkat dinyatakan siap jika dari hasil inspeksi terakhir menyatakan siap</h6>
-            </li>
-            <li>
-                <h6>Perangkat dinyatakan tidak siap jika dari hasil inspeksi terakhir menyatakan tidak siap atau lebih
-                    dari (2 + frekuensi pengecekan) minggu perangkat tersebut tidak pernah melakukan inspeksi</h6>
-            </li>
-        </ul>
-
-    <div class="card-table table">
-        <h6>Data Kesiapan Alat Keselamatan Kerja Kantor UPDK Bandar Lampung</h6>
-        <div id="filter_div">
-            <label for="bulan-filter">Waktu: </label>
-            <select id="bulan-filter">
-                <option value="">Bulan Ini</option>
-                <option value="">3 Bulan Terakhir</option>
-                <option value="">6 Bulan Terakhir</option>
-            </select>
         </div>
+        
+            <form>
+                <div class="row mb-3">
+                    <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto Profil</label>
+                    <div class="col-md-8 col-lg-9">
+                        <img src="assets/img/profile-img.jpg" alt="Profile">
+                        <div class="pt-2">
+                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i
+                                    class="bi bi-upload"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i
+                                    class="bi bi-trash"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="fullName" type="text" class="form-control" id="fullName" value="Kevin Anderson">
+                    </div>
+                </div>
+    
+        
+                <div class="row mb-3">
+                    <label for="company" class="col-md-4 col-lg-3 col-form-label">Jabatan</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="company" type="text" class="form-control" id="company"
+                            value="Lueilwitz, Wisoky and Leuschke">
+                    </div>
+                </div>
+    
+        
+                <div class="row mb-3">
+                    <label for="Country" class="col-md-4 col-lg-3 col-form-label">Unit Kerja</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="country" type="text" class="form-control" id="Country" value="USA">
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="Phone" value="(436) 486-3538 x29071">
+                    </div>
+                </div>
+            </form><!-- End Profile Edit Form -->
+        
 
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Aspek</th>
-                <th>Jumlah Barang Baik</th>
-                <th>Jumlah Barang Buruk</th>
-                <th>Total Barang</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="card chart">
-        <h6>Persentase Kesiapan Alat Keselamatan Kerja</h6>
-        <canvas id="barchart"></canvas>
-    </div>
-</div>
-
-<div class="container">
-    <div class="card-table table">
-        <h6>Data Kesiapan Alat Keselamatan Kerja PLTD/G Tarahan</h6>
-        <div id="filter_div">
-            <label for="bulan-filter">Waktu: </label>
-            <select id="bulan-filter">
-                <option value="">Bulan Ini</option>
-                <option value="">3 Bulan Terakhir</option>
-                <option value="">6 Bulan Terakhir</option>
-            </select>
-        </div>
-
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Aspek</th>
-                <th>Jumlah Alat Baik</th>
-                <th>Jumlah Alat Buruk</th>
-                <th>Total Barang</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="card chart">
-        <h6>Persentase Kesiapan Alat Keselamatan Kerja</h6>
-        <canvas id="barchart2"></canvas>
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="card-table table">
-        <h6>Data Kesiapan Alat Keselamatan Kerja PLTD Teluk Betung</h6>
-        <div id="filter_div">
-            <label for="bulan-filter">Waktu: </label>
-            <select id="bulan-filter">
-                <option value="">Bulan Ini</option>
-                <option value="">3 Bulan Terakhir</option>
-                <option value="">6 Bulan Terakhir</option>
-            </select>
-        </div>
-
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Aspek</th>
-                <th>Jumlah Barang Baik</th>
-                <th>Jumlah Barang Buruk</th>
-                <th>Total Barang</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>APAR & APAB</td>
-                <td>4</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="card chart">
-        <h6>Persentase Kesiapan Alat Keselamatan Kerja</h6>
-        <canvas id="barchart"></canvas>
-    </div>
-</div>
-
-    <footer class="text-center">
+        <footer class="text-center">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
@@ -316,7 +179,7 @@
                     <span>Get connected with us on social networks:</span>
                 </div>
                 <!-- Left -->
-        
+
                 <!-- Right -->
                 <div>
                     <a href="" class="me-4 text-reset">
@@ -341,7 +204,7 @@
                 <!-- Right -->
             </section>
             <!-- Section: Social media -->
-        
+
             <!-- Section: Links  -->
             <section class="">
                 <div class="container text-center text-md-start mt-5">
@@ -359,7 +222,7 @@
                             </p>
                         </div>
                         <!-- Grid column -->
-        
+
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
@@ -380,7 +243,7 @@
                             </p>
                         </div>
                         <!-- Grid column -->
-        
+
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
@@ -401,7 +264,7 @@
                             </p>
                         </div>
                         <!-- Grid column -->
-        
+
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
@@ -420,14 +283,14 @@
                 </div>
             </section>
             <!-- Section: Links  -->
-        
+
             <!-- Copyright -->
             <div class="text-center p-4">
                 © 2021 Copyright:
                 <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
             <!-- Copyright -->
-    </footer>
+        </footer>
 
     </main><!-- End #main -->
 

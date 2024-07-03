@@ -335,6 +335,39 @@ document.addEventListener('DOMContentLoaded', () => {
           })
         }).observe(mainContainer);
       }, 200);
-    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  const placeholders = document.querySelectorAll('.date-placeholder');
+
+  placeholders.forEach(placeholder => {
+    placeholder.addEventListener('click', function() {
+      const input = document.createElement('input');
+      input.type = 'date';
+      input.classList.add('form-control');
+
+      input.addEventListener('blur', function() {
+        if (!input.value) {
+          placeholder.innerText = placeholder.getAttribute('data-placeholder');
+          placeholder.style.display = 'inline';
+          input.remove();
+        }
+      });
+
+      input.addEventListener('change', function() {
+        placeholder.innerText = input.value;
+        placeholder.style.display = 'inline';
+        input.remove();
+      });
+
+      placeholder.style.display = 'none';
+      placeholder.parentNode.appendChild(input);
+      input.focus();
+    });
+
+    placeholder.innerText = placeholder.getAttribute('data-placeholder');
+  });
+});
+
 
   })();

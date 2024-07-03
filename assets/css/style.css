@@ -375,33 +375,35 @@ h6 {
 /*--------------------------------------------------------------
 # Profie Page
 --------------------------------------------------------------*/
-.card-profil {
+.card-profile {
   text-align: center;
   margin: auto;
   width: 600px;
 }
-.profile .profile-card img {
+
+.profile-card img {
   max-width: 120px;
 }
 
-.profile .profile-card h2 {
+.profile-card h2 {
   font-size: 24px;
   font-weight: 700;
   color: #2c384e;
   margin: 10px 0 0 0;
 }
 
-.profile .profile-card h3 {
+.profile-card h3 {
   font-size: 18px;
 }
 
-.profile .profile-card .social-links a {
+.profile-card .social-links a {
   font-size: 20px;
   display: inline-block;
   color: rgba(1, 41, 112, 0.5);
   line-height: 0;
   transition: 0.3s;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -571,6 +573,34 @@ h6 {
   color: #fff;
 }
 
+.table-jadwal table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-jadwal ul li h6 {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.table-jadwal tr:first-child th {
+  background-color: #164F63;
+  color: #fff;
+}
+
+.table-jadwal th,
+.table-jadwal td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid rgb(191, 191, 191);
+}
+
+.table-jadwal th {
+  background-color: #f0f8ff;
+  color: #333;
+}
 /*--------------------------------------------------------------
 # Chart
 --------------------------------------------------------------*/
@@ -615,10 +645,6 @@ canvas {
   padding: 20px;
   display: none;
   border: 1px solid #ddd;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card-body li{
