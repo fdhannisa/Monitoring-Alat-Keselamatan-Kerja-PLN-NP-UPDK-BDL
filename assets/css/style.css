@@ -396,15 +396,28 @@ h6 {
   font-size: 18px;
 }
 
-.profile-card .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
-  line-height: 0;
-  transition: 0.3s;
+.profile-actions {
+  position: absolute;
+  top: 10px;
+  /* Atur jarak dari atas */
+  right: 10px;
+  /* Atur jarak dari kanan */
 }
 
+.profile-actions .btn-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
+.profile-actions .btn-primary:focus,
+.profile-actions .btn-primary:hover {
+  background-color: transparent;
+  outline: none;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -514,6 +527,7 @@ h6 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
 }
 
 .card.chart {
@@ -650,6 +664,94 @@ canvas {
 .card-body li{
   list-style: none;
 }
+
+
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+body main-login {
+  background-color: #164F63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-login{
+  width: 100%;
+  display: flex;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1);
+}
+
+.login{
+  width: 600px;
+}
+
+form{
+  width: 350px;
+  margin: 60px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top img{
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  display: flex
+}
+.login h1 {
+  margin: 20px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercasex;
+}
+
+hr {
+  border-top: 2px solid #164F63;
+}
+
+p{
+  text-align: center;
+  margin: 5px;
+}
+
+
+input{
+  width: 100%;
+  margin: 2px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.button-login{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+   border: none;
+   outline: none;
+   padding: 8px;
+   width: 252px;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top: 20px;
+   border-radius: 20px;
+   background-color: #164F63;
+   align-items: center;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
