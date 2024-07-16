@@ -545,13 +545,13 @@ select{
 
 .chart {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
-  max-height: 300px;
+  max-height: 650px;
 }
 
 .table table {
