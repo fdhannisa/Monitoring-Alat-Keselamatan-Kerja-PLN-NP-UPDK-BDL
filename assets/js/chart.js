@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
           borderWidth: 1
         },
         {
-          label: 'PLTG Tarahan',
+          label: 'PLTD/G Tarahan',
           data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
@@ -39,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
           data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
           backgroundColor: 'rgba(153, 102, 255, 0.2)',
           borderColor: 'rgba(153, 102, 255, 1)',
+          borderWidth: 1
+        },
+        {
+          label: 'PLTA Tegineng',
+          data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
           borderWidth: 1
         }
       ]

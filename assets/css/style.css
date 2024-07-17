@@ -520,6 +520,8 @@ h6 {
   gap: 20px;
   justify-content: center;
   margin-bottom: 35px;
+  max-width: 200%;
+  overflow-x: auto;
 }
 
 #filter_div {
@@ -545,19 +547,15 @@ select{
 
 .chart {
   flex: 1;
-  /* min-width: 300px; */
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: auto;
-  max-height: 650px;
+  max-height: 100%;
+  max-width: 200%;
+  overflow-x: auto;
 }
 
-.table table {
-  width: 100%;
-  border-collapse: collapse;
-}
 .table ul li h6{
   background-color: transparent;
   margin: 0;
@@ -575,6 +573,7 @@ select{
 .table table {
   width: 100%;
   border: 1px solid #ccc;
+  border-collapse: collapse;
 }
 
 .table th,
