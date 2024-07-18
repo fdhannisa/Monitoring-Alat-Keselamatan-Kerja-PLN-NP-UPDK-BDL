@@ -520,10 +520,12 @@ h6 {
 
  .filter-container {
    display: flex;
-   gap: 10px;
+   gap: 1rem;
    margin-bottom: 10px;
    font-size: 12px;
+   align-items: center;
  }
+
 
  .filter-container>div {
    display: flex;
@@ -761,7 +763,9 @@ button{
 /*--------------------------------------------------------------
 # Tabel data petugas
 --------------------------------------------------------------*/
-
+.header1{
+  font-weight: bold;
+}
 .float-right {
   float: right;
   align-items: center;
@@ -770,6 +774,7 @@ button{
 th, td{
   padding: 5px;
 }
+
 
 .btn-sm {
   padding: auto;
