@@ -4,61 +4,61 @@ document.addEventListener('DOMContentLoaded', function() {
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+      labels: ['Kantor UP BL', 'PLTD/G Tarahan', 'PLTD Teluk Betung', 'PLTD Teginenang', 'PLTA Way Besai', 'PLTA Batu Tegi'],
       datasets: [
         {
-          label: 'Kantor UP BL',
-          data: [12, 19, 3, 5, 2, 3, 7, 8, 6, 10, 12, 15],
+          label: 'Januari',
+          data: [98.0, 92.3, 97.8, 100.0, 90.6, 98,8],
           backgroundColor: 'rgba(22, 79, 99, 0.2)',
           borderColor: 'rgba(22, 79, 99, 1)',
           borderWidth: 1
         },
         {
-          label: 'PLTA Way Besai',
-          data: [7, 11, 5, 8, 3, 7, 10, 6, 9, 12, 14, 9],
+          label: 'Februari',
+          data: [98.0, 92.3, 97.0, 98.2, 90.6, 98.6],
           backgroundColor: 'rgba(60, 186, 159, 0.2)',
           borderColor: 'rgba(60, 186, 159, 1)',
           borderWidth: 1
         },
         {
-          label: 'PLTA Batu Tegi',
-          data: [5, 6, 9, 10, 4, 8, 11, 3, 5, 7, 11, 13],
+          label: 'Maret',
+          data: [98.0, 90.8, 97.0, 98.2, 90.6, 98.6],
           backgroundColor: 'rgba(255, 206, 86, 0.2)',
           borderColor: 'rgba(255, 206, 86, 1)',
           borderWidth: 1
         },
         {
-          label: 'PLTD/G Tarahan',
-          data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
+          label: 'April',
+          data: [98.7, 98.7, 97.8, 100.0, 96.9, 98.9],
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1
         },
-         {
-          label: 'PLTG Teluk Betung',
-          data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
+        {
+          label: 'Mei',
+          data: [98.9, 98.7, 97.8, 100.0, 96.9, 98.9],
           backgroundColor: 'rgba(153, 102, 255, 0.2)',
           borderColor: 'rgba(153, 102, 255, 1)',
           borderWidth: 1
         },
-        {
-          label: 'PLTA Tegineng',
-          data: [10, 13, 4, 7, 9, 5, 8, 12, 11, 6, 8, 10],
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1
-        }
+ 
       ]
     },
     options: {
-      responsive: true,
-      scales: {
-        y: {
-          beginAtZero: true
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: false,
+              min: 80,
+              ticks: {
+                callback: function(value) {
+                  return value + '%';
+                }
+              }
+            }
+          }
         }
-      }
-    }
-  });
+      });
 });
 
 

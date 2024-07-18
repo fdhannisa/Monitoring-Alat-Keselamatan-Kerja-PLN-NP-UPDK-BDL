@@ -130,7 +130,7 @@ h6 {
 }
 
 .header-nav .nav-icon {
-  font-size: 22px;
+  font-size: 18px;
   color: #012970;
   margin-right: 25px;
   position: relative;
@@ -171,12 +171,6 @@ h6 {
 .header-nav .notifications .notification-item i {
   margin: 0 20px 0 10px;
   font-size: 24px;
-}
-
-.header-nav .notifications .notification-item h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
 }
 
 .header-nav .notifications .notification-item p {
@@ -299,7 +293,7 @@ h6 {
 .sidebar-nav .nav-link {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   color: #ffffff;
   transition: 0.3;
@@ -524,12 +518,22 @@ h6 {
   overflow-x: auto;
 }
 
-#filter_div {
-      margin-bottom: 10px;
-}
+ .filter-container {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+   font-size: 12px;
+ }
+
+ .filter-container>div {
+   display: flex;
+   align-items: center;
+ }
 
 select{
   font-size: 12px;
+  width: 140px;
+  height: 35px;
 }
 
 .card-table{
@@ -579,21 +583,16 @@ select{
 .table th,
 .table td {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   font-size: 12px;
   border-bottom: 1px solid #ddd;
   border: 1px solid rgb(191, 191, 191);
 }
 
 .table th {
-  background-color: #f0f8ff;
   color: #333;
 }
 
-.table tr:first-child th {
-  background-color: #164F63;
-  color: #fff;
-}
 
 .table-jadwal table {
   width: 100%;
@@ -604,11 +603,6 @@ select{
   background-color: transparent;
   margin: 0;
   padding: 0;
-}
-
-.table-jadwal tr:first-child th {
-  background-color: #164F63;
-  color: #fff;
 }
 
 .table-jadwal th,
@@ -622,6 +616,11 @@ select{
 .table-jadwal th {
   background-color: #f0f8ff;
   color: #333;
+}
+
+.nama-aspek{
+  color: #ffff;
+  font-weight: bold;
 }
 /*--------------------------------------------------------------
 # Chart
@@ -782,3 +781,39 @@ button{
   color: #012970;
 }
 
+.logo-pln img{
+  width: 300px;
+  height: 100px;
+}
+
+.hubungikami {
+  text-align: center;
+}
+
+.hubungikami a {
+  display: inline-block;
+  width: 100%;
+}
+
+.lokasi {
+  text-align: left;
+}
+
+.lokasi p {
+  margin-left: 0;
+  /* Adjust margin as needed */
+}
+
+.lokasi h6 {
+  margin-bottom: 1rem;
+  /* Adjust as needed */
+}
+
+.lokasi {
+  text-align: left;
+}
+
+.lokasi p {
+  margin-left: 0;
+  /* Pastikan margin kiri adalah 0 untuk rata kiri */
+}

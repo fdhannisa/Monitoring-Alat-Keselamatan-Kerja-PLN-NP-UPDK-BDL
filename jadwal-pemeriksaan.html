@@ -49,28 +49,6 @@
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
-  
-  
-  
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-  
-  
-  
-        <li class="nav-item dropdown">
-  
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a><!-- End Notification Icon -->
-  
-        </li>
-        <li class="nav-item dropdown pe-3">
-  
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="profil.html" data-bs-toggle="dropdown">
-            <img src="" alt="Profile" class="rounded-circle">
-          </a>
-    </nav>
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
@@ -79,17 +57,31 @@
     <ul class="sidebar-nav" id="sidebar-nav">
   
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link" href="dashboard-team-leader.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <!-- End Dashboard Nav -->
   
       <li class="nav-item">
-        <a class="nav-link collapsed" href="data-barang.html">
-          <i class="bi bi-menu-button-wide"></i><span>Data Alat</span>
+        <a class="nav-link" href="laporan-data-alat.html">
+          <i class="bi bi-menu-button-wide"></i>
+          <span>Laporan Data Alat</span>
         </a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" href="jadwal-pemeriksaan.html">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan Alat</span></i>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" href="pages-login.html">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Keluar</span>
+        </a>
+      </li>
   
       <li class="nav-item">
         <a class="nav-link" href="data-petugas.html">
@@ -98,79 +90,118 @@
         </a>
       </li>
   
-      <li class="nav-item">
-        <a class="nav-link" href="jadwal-pemeriksaan.html">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan</span></i>
-        </a>
-      </li>
-  
   
     </ul>
-  
-  
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Jadwal Pemeriksaan</h1>
+    <h1>Jadwal Pemeriksaan Alat</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="jadwal-pemeriksaan.html">Jadwal Pemeriksaan</a></li>
+        <li class="breadcrumb-item"><a href="jadwal-pemeriksaan.html">Jadwal Pemeriksaan Alat</a></li>
       </ol>
     </nav>
   </div>
     </div><!-- End Page Title -->
 
     <section class="section">
-        <div class="table-jadwal">
-        
-        <div id="filter_div">
-          <label for="bulan-filter">Lokasi: </label>
-          <select id="bulan-filter">
-            <option value="">Kantor UPDK Bandar Lampung</option>
-            <option value="Januari">PLTD/G Tarahan</option>
-            <option value="Januari">PLTD Teluk Betung</option>
-            <option value="Januari">PLTD Tegineneng</option>
-            <option value="Januari">PLTA Way Besai</option>
-            <option value="Januari">PLTA Batutegi</option>
-          </select>
-        </div>
-
+      <div class="container">
+      
+        <div class="card-table table">
+          <h6>Jadwal Monitoring Kesiapan Fire Protection System</h6>
+          <div class="filter-container">
+            <div id="filter_div">
+              <label for="bulan-filter">Waktu: </label>
+              <select id="bulan-filter">
+                <option value="">Januari</option>
+                <option value="">Februari</option>
+                <option value="">Maret</option>
+                <option value="">April</option>
+                <option value="">Mei</option>
+                <option value="">Juni</option>
+                <option value="">Juli</option>
+                <option value="">Agustus</option>
+                <option value="">September</option>
+                <option value="">Oktober</option>
+                <option value="">November</option>
+                <option value="">Desember</option>
+              </select>
+            
+              <div id="filter_div">
+                <label for="lokasi-filter">Lokasi: </label>
+                <select id="lokasi-filter">
+                  <option value="">Kantor UP BL</option>
+                  <option value="">PLTD/G Tarahan</option>
+                  <option value="">PLTD Teluk Betung</option>
+                  <option value="">PLTD Tegineneng</option>
+                  <option value="">PLTA Way Besai</option>
+                  <option value="">PLTA Batu Tegi</option>
+                </select>
+              </div>
+          </div>
+          </div>
+      
           <table>
-            <tr>
+            <tr class="header1">
               <th>No.</th>
-              <th>Aspek</th>
-              <th>Rencana Pemeriksaan</th>
-              <th>Realisasi Pemeriksaan</th>
-              <th>Jumlah Alat Baik</th>
-              <th>Jumlah Alat Buruk</th>
-              <th>Total Alat</th>
-              <th>Keterangan</th>
+              <th>Nama Alat</th>
+              <th>Jadwal Pemeriksaan</th>
+              <th>Nama Petugas</th>
+              <th>Status</th>
             </tr>
             <tr>
-              <td>1. </td>
-              <td>APAR & APAB</td>
-              <td>12/02/24</td>
-              <td>12/02/24</td>
-              <td>4</td>
-              <td>4</td>
-              <td>8</td>
-              <td>ajhsgvfdytwisu</td>
+              <td>1.</td>
+              <td>APAT</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
             </tr>
-           
+            <tr>
+              <td>2.</td>
+              <td>APAR/APAB</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Box Hydrant Outdoor</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Box Hydrant Indoor</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>Jockey Pump</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>ELectric Pump</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+            </tr>
           </table>
         </div>
+      
+      </div>
     </section>
 
     <footer class="text-center">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
     
         <!-- Right -->
         <div>
@@ -200,78 +231,54 @@
       <!-- Section: Links  -->
       <section class="">
         <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <!-- Grid column -->
     
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Products
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Useful links
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Settings</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Help</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
+          <div class="logo-pln">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>PLN Nusantara Power
+            </h6>
+            <img src="assets/img/logo_plnnp.jpg" alt="">
           </div>
-          <!-- Grid row -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <div class="hubungikami">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Hubungi Kami
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Instagram</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Youtube</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Website</a>
+              </p>
+            </div>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <div class="lokasi">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Lokasi
+              </h6>
+              <p style="margin-left: 0; text-align: left;">
+                Kantor Strategis : Jl. Ketintang Baru No. 11,
+                Surabaya, Indonesia
+              </p>
+              <br>
+              <p style="margin-left: 0; text-align: left;">
+                Kantor UP BL : Jl. Raden Gunawan II, No.4, Lampung
+              </p>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
         </div>
       </section>
       <!-- Section: Links  -->
