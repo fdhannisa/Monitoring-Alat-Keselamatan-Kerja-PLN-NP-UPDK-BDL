@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team Leader - Jadwal Pemeriksaan</title>
+  <title>Admin - Kelola Data Petugas</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -43,7 +44,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
   
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="dashboard-user.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo_plnnp.jpg" alt="">
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -55,48 +56,47 @@
   
     <ul class="sidebar-nav" id="sidebar-nav">
   
-      <li class="nav-item">
-        <a class="nav-link" href="dashboard-user.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard-user.html">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="kelola-data-petugas.html">
+                <i class="bi bi-person"></i>
+                <span>Kelola Data Petugas</span>
+              </a>
+            </li>
   
-      <li class="nav-item">
-        <a class="nav-link" href="laporan-data-alat.html">
-          <i class="bi bi-menu-button-wide"></i>
-          <span>Laporan Data Alat</span>
-        </a>
-      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kelola-data-alat.html">
+                <i class="bi bi-menu-button-wide"></i>
+                <span>Kelola Data Alat</span>
+              </a>
+            </li>
   
-      <li class="nav-item">
-        <a class="nav-link" href="jadwal-pemeriksaan.html">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan Alat</span></i>
-        </a>
-      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadwal-pemeriksaan.html">
+              <i class="bi bi-layout-text-window-reverse"></i>
+              <span>Kelola Jadwal Pemeriksaan</span></i>
+            </a>
+          </li>
   
-      <li class="nav-item">
-        <a class="nav-link" href="pages-login.html">
-          <i class="bi bi-box-arrow-right"></i>
-          <span>Keluar</span>
-        </a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="data-petugas.html">
-          <i class="bi bi-person"></i>
-          <span>Daftar Petugas</span>
-        </a>
-      </li>
-  
-  
+          <li class="nav-item">
+            <a class="nav-link" href="pages-login.html">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Keluar</span>
+            </a>
+          </li>
     </ul>
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Jadwal Pemeriksaan Alat</h1>
+    <h1>Kelola Data Petugas</h1>
   </div>
     </div><!-- End Page Title -->
 
@@ -104,88 +104,29 @@
       <div class="container">
       
         <div class="card-table table">
-          <h6>Jadwal Monitoring Kesiapan Fire Protection System</h6>
-          <div class="filter-container">
-            <div id="filter_div">
-              <label for="bulan-filter">Waktu: </label>
-              <select id="bulan-filter">
-                <option value="">Januari</option>
-                <option value="">Februari</option>
-                <option value="">Maret</option>
-                <option value="">April</option>
-                <option value="">Mei</option>
-                <option value="">Juni</option>
-                <option value="">Juli</option>
-                <option value="">Agustus</option>
-                <option value="">September</option>
-                <option value="">Oktober</option>
-                <option value="">November</option>
-                <option value="">Desember</option>
-              </select>
-            
-              <div id="filter_div">
-                <label for="lokasi-filter">Lokasi: </label>
-                <select id="lokasi-filter">
-                  <option value="">Kantor UP BL</option>
-                  <option value="">PLTD/G Tarahan</option>
-                  <option value="">PLTD Teluk Betung</option>
-                  <option value="">PLTD Tegineneng</option>
-                  <option value="">PLTA Way Besai</option>
-                  <option value="">PLTA Batu Tegi</option>
-                </select>
-              </div>
-          </div>
-          </div>
-      
-          <table>
-            <tr class="header1">
+          <h6>Tabel Data Petugas </h6>
+          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Tambah Petugas
+          </button>
+          <table data-petugas>
+            <tr>
               <th>No.</th>
-              <th>Nama Alat</th>
-              <th>Jadwal Pemeriksaan</th>
               <th>Nama Petugas</th>
-              <th>Status</th>
+              <th>NID</th>
+              <th>Unit Kerja</th>
+              <th>Psssword</th>
+              <th>Aksi</th>
             </tr>
             <tr>
               <td>1.</td>
-              <td>APAT</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>APAR/APAB</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>Box Hydrant Outdoor</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>Box Hydrant Indoor</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>5.</td>
-              <td>Jockey Pump</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td>ELectric Pump</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
+              <td>Nama orang</td>
+              <td>1234567890</td>
+              <td>Kantor UP Bandar Lampung</td>
+              <td>************</td>
+              <td>
+                <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+              </td>
             </tr>
           </table>
         </div>

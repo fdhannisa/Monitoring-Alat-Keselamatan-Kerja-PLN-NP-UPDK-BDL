@@ -367,7 +367,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     placeholder.innerText = placeholder.getAttribute('data-placeholder');
   });
-});
+  });
+  
+  // menampilkan form input laporan
+
+  document.getElementById('masukanLaporan').onclick = function() {
+    var form = document.querySelector('.form-laporan-monitoring');
+    form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+  }
 
 
   })();

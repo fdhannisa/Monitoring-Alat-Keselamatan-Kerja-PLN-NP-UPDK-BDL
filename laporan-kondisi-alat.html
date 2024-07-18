@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team Leader - Jadwal Pemeriksaan</title>
+  <title>Tim Inspeksi - Laporan Kondisi Alat</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,7 +43,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
   
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="dashboard-user.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo_plnnp.jpg" alt="">
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -63,15 +63,15 @@
       </li>
   
       <li class="nav-item">
-        <a class="nav-link" href="laporan-data-alat.html">
+        <a class="nav-link" href="jadwal-pemeriksaan.html">
           <i class="bi bi-menu-button-wide"></i>
-          <span>Laporan Data Alat</span>
+          <span>Jadwal Pemeriksaan Alat</span>
         </a>
       </li>
   
       <li class="nav-item">
-        <a class="nav-link" href="jadwal-pemeriksaan.html">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan Alat</span></i>
+        <a class="nav-link" href="laporan-kondisi-alat.html">
+         <i class="bi bi-journal-text"></i><span>Laporan Kondisi Alat</span></i>
         </a>
       </li>
   
@@ -96,15 +96,13 @@
   <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Jadwal Pemeriksaan Alat</h1>
+    <h1>Laporan Kondisi Alat</h1>
   </div>
     </div><!-- End Page Title -->
 
     <section class="section">
-      <div class="container">
-      
         <div class="card-table table">
-          <h6>Jadwal Monitoring Kesiapan Fire Protection System</h6>
+          <h6>Monitoring Kesiapan Fire Protection System Kantor UP Bandar Lampung</h6>
           <div class="filter-container">
             <div id="filter_div">
               <label for="bulan-filter">Waktu: </label>
@@ -122,168 +120,165 @@
                 <option value="">November</option>
                 <option value="">Desember</option>
               </select>
-            
-              <div id="filter_div">
-                <label for="lokasi-filter">Lokasi: </label>
-                <select id="lokasi-filter">
-                  <option value="">Kantor UP BL</option>
-                  <option value="">PLTD/G Tarahan</option>
-                  <option value="">PLTD Teluk Betung</option>
-                  <option value="">PLTD Tegineneng</option>
-                  <option value="">PLTA Way Besai</option>
-                  <option value="">PLTA Batu Tegi</option>
-                </select>
-              </div>
+            </div>
           </div>
-          </div>
-      
+        
           <table>
             <tr class="header1">
               <th>No.</th>
               <th>Nama Alat</th>
               <th>Jadwal Pemeriksaan</th>
+              <th>Jumlah Alat Baik</th>
+              <th>Jumlah Alat Buruk</th>
+              <th>Total Alat</th>
               <th>Nama Petugas</th>
               <th>Status</th>
+              <th>Keterangan</th>
+              <th>Aksi</th>
             </tr>
             <tr>
               <td>1.</td>
               <td>APAT</td>
               <td>09/01/2024</td>
+              <td>4</td>
+              <td>4</td>
+              <td>8</td>
               <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>APAR/APAB</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>Box Hydrant Outdoor</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>Box Hydrant Indoor</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>5.</td>
-              <td>Jockey Pump</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td>ELectric Pump</td>
-              <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
-              <td>Belum diperiksa</td>
+              <td>Alat dalam kondisi baik semua</td>
+              <td id="masukanLaporan" style="cursor: pointer; color: blue; text-decoration: underline;">Masukan Laporan</td>
             </tr>
           </table>
-        </div>
-      
+<section>
+  <div class="form-laporan-monitoring">
+    <h1>Form Input Laporan Hasil Monitoring</h1>
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama Alat:</label>
+        <input type="text" class="form-control">
       </div>
-    </section>
+      <div class="form-group">
+        <label for="alamat">Jadwal Pemeriksaan:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="nama">Jumlah Alat Baik:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="nama">Jumlah Alat Buruk:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="nama">Total Alat:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="nama">Keterangan:</label>
+        <textarea type="text" class="form-control" id="alamat"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="jk">Nama Petugas:</label>
+        <input type="text" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Simpan</button>
+    </form>
+  </div>
+  </section>
+</section>
+          
 
-    <footer class="text-center">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-    
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-    
-          <div class="logo-pln">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>PLN Nusantara Power
-            </h6>
-            <img src="assets/img/logo_plnnp.jpg" alt="">
-          </div>
-    
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <div class="hubungikami">
-              <h6 class="text-uppercase fw-bold mb-4">
-                Hubungi Kami
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Instagram</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Youtube</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Website</a>
-              </p>
-            </div>
-          </div>
-          <!-- Grid column -->
-    
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <div class="lokasi">
-              <h6 class="text-uppercase fw-bold mb-4">
-                Lokasi
-              </h6>
-              <p style="margin-left: 0; text-align: left;">
-                Kantor Strategis : Jl. Ketintang Baru No. 11,
-                Surabaya, Indonesia
-              </p>
-              <br>
-              <p style="margin-left: 0; text-align: left;">
-                Kantor UP BL : Jl. Raden Gunawan II, No.4, Lampung
-              </p>
-            </div>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-4">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+<footer class="text-center">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+
+      <div class="logo-pln">
+        <h6 class="text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3"></i>PLN Nusantara Power
+        </h6>
+        <img src="assets/img/logo_plnnp.jpg" alt="">
       </div>
-      <!-- Copyright -->
-    </footer>
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <div class="hubungikami">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Hubungi Kami
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Youtube</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Website</a>
+          </p>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <div class="lokasi">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Lokasi
+          </h6>
+          <p style="margin-left: 0; text-align: left;">
+            Kantor Strategis : Jl. Ketintang Baru No. 11,
+            Surabaya, Indonesia
+          </p>
+          <br>
+          <p style="margin-left: 0; text-align: left;">
+            Kantor UP BL : Jl. Raden Gunawan II, No.4, Lampung
+          </p>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
   </main><!-- End #main -->
 
