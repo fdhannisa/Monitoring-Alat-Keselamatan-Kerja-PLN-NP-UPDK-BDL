@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Admin - Kelola Data Petugas</title>
+  <title>Team Leader - Jadwal Pemeriksaan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,59 +44,59 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
   
     <div class="d-flex align-items-center justify-content-between">
-      <a href="dashboard-user.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo_plnnp.jpg" alt="">
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
   
     <ul class="sidebar-nav" id="sidebar-nav">
   
-            <li class="nav-item">
-              <a class="nav-link" href="dashboard-user.html">
-                <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="kelola-data-petugas.html">
-                <i class="bi bi-person"></i>
-                <span>Kelola Data Petugas</span>
-              </a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dashboard-user.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
   
-            <li class="nav-item">
-              <a class="nav-link" href="kelola-data-alat.html">
-                <i class="bi bi-menu-button-wide"></i>
-                <span>Kelola Data Alat</span>
-              </a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kelola-data-petugas.html">
+          <i class="bi bi-person"></i>
+          <span>Kelola Data Petugas</span>
+        </a>
+      </li>
   
-          <li class="nav-item">
-            <a class="nav-link" href="kelola-jadwal-pemeriksaan.html">
-              <i class="bi bi-layout-text-window-reverse"></i>
-              <span>Kelola Jadwal Pemeriksaan</span></i>
-            </a>
-          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kelola-data-alat.html">
+          <i class="bi bi-menu-button-wide"></i>
+          <span>Kelola Data Alat</span>
+        </a>
+      </li>
   
-          <li class="nav-item">
-            <a class="nav-link" href="pages-login.html">
-              <i class="bi bi-box-arrow-right"></i>
-              <span>Keluar</span>
-            </a>
-          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kelola-jadwal-pemeriksaan.html">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Kelola Jadwal Pemeriksaan</span></i>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" href="pages-login.html">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Keluar</span>
+        </a>
+      </li>
     </ul>
   </aside><!-- End Sidebar-->
+
 
   <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Kelola Data Petugas</h1>
+    <h1>Jadwal Pemeriksaan Alat</h1>
   </div>
     </div><!-- End Page Title -->
 
@@ -104,33 +104,110 @@
       <div class="container">
       
         <div class="card-table table">
-          <h6>Tabel Data Petugas </h6>
-          <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#modalTambahPetugas">
-            Tambah Data Petugas
-          </button>
-          <table data-petugas>
-            <tr>
+          <h6>Jadwal Monitoring Kesiapan Fire Protection System</h6>
+          <div class="filter-container">
+            <div id="filter_div">
+              <label for="bulan-filter">Waktu: </label>
+              <select id="bulan-filter">
+                <option value="">Januari</option>
+                <option value="">Februari</option>
+                <option value="">Maret</option>
+                <option value="">April</option>
+                <option value="">Mei</option>
+                <option value="">Juni</option>
+                <option value="">Juli</option>
+                <option value="">Agustus</option>
+                <option value="">September</option>
+                <option value="">Oktober</option>
+                <option value="">November</option>
+                <option value="">Desember</option>
+              </select>
+            
+              <div id="filter_div">
+                <label for="lokasi-filter">Lokasi: </label>
+                <select id="lokasi-filter">
+                  <option value="">Kantor UP BL</option>
+                  <option value="">PLTD/G Tarahan</option>
+                  <option value="">PLTD Teluk Betung</option>
+                  <option value="">PLTD Tegineneng</option>
+                  <option value="">PLTA Way Besai</option>
+                  <option value="">PLTA Batu Tegi</option>
+                </select>
+              </div>
+          </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTambahJadwal">
+              Tambah Jadwal Pemeriksaan
+            </button>
+          </div>
+      
+          <table>
+            <tr class="header1">
               <th>No.</th>
+              <th>Nama Alat</th>
+              <th>Jadwal Pemeriksaan</th>
               <th>Nama Petugas</th>
-              <th>NID</th>
-              <th>Unit Kerja</th>
-              <th>Psssword</th>
+              <th>Status</th>
               <th>Aksi</th>
             </tr>
             <tr>
               <td>1.</td>
-              <td>Nama orang</td>
-              <td>1234567890</td>
-              <td>Kantor UP Bandar Lampung</td>
-              <td>************</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditPetugas"><i
+              <td>APAT</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
+                  class="fas fa-edit"></i></button>
+              </button></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>APAR/APAB</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
                     class="fas fa-edit"></i></button>
-                </button>
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalHapusPetugas"><i
-                    class="fas fa-trash-alt"></i></button>
-                </button>
-              </td>
+                </button></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Box Hydrant Outdoor</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
+                    class="fas fa-edit"></i></button>
+                </button></td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Box Hydrant Indoor</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
+                    class="fas fa-edit"></i></button>
+                </button></td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>Jockey Pump</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
+                    class="fas fa-edit"></i></button>
+                </button></td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>ELectric Pump</td>
+              <td>09/01/2024</td>
+              <td>Tim Kantor UPDK</td>
+              <td>Belum diperiksa</td>
+              <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditJadwal"><i
+                    class="fas fa-edit"></i></button>
+                </button></td>
             </tr>
           </table>
         </div>
@@ -230,104 +307,71 @@
       <!-- Copyright -->
     </footer>
 
-    <!-- Modal Tambah Petugas -->
-    <div class="modal fade" id="modalTambahPetugas" tabindex="-1" aria-labelledby="modalTambahAlatPetugas" aria-hidden="true">
+    <!-- Modal Edit Jadwal -->
+    <div class="modal fade" id="modalTambahJadwal" tabindex="-1" aria-labelledby="modalTambahJadwal" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTambahPetugas">Tambah Petugas</h5>
+            <h5 class="modal-title" id="modalTambahJadwal">Tambah Jadwal Pemeriksaan</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-    
     
           <div class="modal-body">
             <div class="form-input-data">
               <form class="container-fluid">
                 <div class="col-md-15 mb-3">
+                  <label for="nama_petugas" class="form-label">Nama Alat</label>
+                  <input type="text" class="form-control" id="nama_petugas" placeholder="">
+                </div>
+    
+                <div class="col-md-15 mb-3">
+                  <label for="jadwal_pemeriksaan" class="form-label">Jadwal Pemeriksaan</label>
+                  <input type="date" class="form-control" id="jadwal_pemeriksaan" placeholder="">
+                </div>
+    
+                <div class="col-md-15 mb-3">
                   <label for="nama_petugas" class="form-label">Nama Petugas</label>
                   <input type="text" class="form-control" id="nama_petugas" placeholder="">
                 </div>
-
-                <div class="col-md-15 mb-3">
-                  <label for="nid" class="form-label">NID</label>
-                  <input type="text" class="form-control" id="nid" placeholder="">
-                </div>
-
-                <div class="col-md-15 mb-3">
-                  <label for="unit_kerja" class="form-label">Unit Kerja</label>
-                  <input type="text" class="form-control" id="unit_kerja" placeholder="">
-                </div>
-
-                <div class="col-md-15 mb-3">
-                  <label for="password" class="form-label">Kata Sandi</label>
-                  <input type="text" class="form-control" id="password" placeholder="">
-                </div>
-                <button type="submit" class="btn btn-primary">Tambah Petugas</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Modal Edit Petugas -->
-    <div class="modal fade" id="modalEditPetugas" tabindex="-1" aria-labelledby=modalEditPetugas" aria-hidden="true">
+
+    <!-- Modal Edit Jadwal -->
+    <div class="modal fade" id="modalEditJadwal" tabindex="-1" aria-labelledby="modalEditJadwal" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalEditPetugas">Edit Data Petugas</h5>
+            <h5 class="modal-title" id="modalEditJadwal">Edit Jadwal Pemeriksaan</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-    
     
           <div class="modal-body">
             <div class="form-input-data">
-                  <form class="container-fluid">
-                    <div class="col-md-15 mb-3">
-                      <label for="nama_petugas" class="form-label">Nama Petugas</label>
-                      <input type="text" class="form-control" id="nama_petugas" placeholder="">
-                    </div>
-                  
-                    <div class="col-md-15 mb-3">
-                      <label for="nid" class="form-label">NID</label>
-                      <input type="text" class="form-control" id="nid" placeholder="">
-                    </div>
-                  
-                    <div class="col-md-15 mb-3">
-                      <label for="unit_kerja" class="form-label">Unit Kerja</label>
-                      <input type="text" class="form-control" id="unit_kerja" placeholder="">
-                    </div>
-                  
-                    <div class="col-md-15 mb-3">
-                      <label for="password" class="form-label">Kata Sandi</label>
-                      <input type="text" class="form-control" id="password" placeholder="">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                  </form>
+              <form class="container-fluid">
+                <div class="col-md-15 mb-3">
+                  <label for="nama_petugas" class="form-label">Nama Alat</label>
+                  <input type="text" class="form-control" id="nama_petugas" placeholder="">
+                </div>
+    
+                <div class="col-md-15 mb-3">
+                  <label for="jadwal_pemeriksaan" class="form-label">Jadwal Pemeriksaan</label>
+                  <input type="date" class="form-control" id="jadwal_pemeriksaan" placeholder="">
+                </div>
+    
+                <div class="col-md-15 mb-3">
+                  <label for="nama_petugas" class="form-label">Nama Petugas</label>
+                  <input type="text" class="form-control" id="nama_petugas" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+              </form>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- Modal Hapus Petugas -->
-    <div class="modal fade" id="modalHapusPetugas" tabindex="-1" aria-labelledby="modalHapusPetugas" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalHapusPetugas">Hapus Data Petugas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body">
-            <p>Anda yakin menghapus Petugas ini?</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Iya</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-          </div>
-        </div>
-    
       </div>
     </div>
 
