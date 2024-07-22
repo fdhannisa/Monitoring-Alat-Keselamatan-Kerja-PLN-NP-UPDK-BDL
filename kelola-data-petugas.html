@@ -105,9 +105,11 @@
       
         <div class="card-table table">
           <h6>Tabel Data Petugas </h6>
-          <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#modalTambahPetugas">
-            Tambah Data Petugas
-          </button>
+              <div class="btn-container">
+                <button type="button" class="btn btn-primary btn-smaller" data-bs-toggle="modal" data-bs-target="#modalTambahPetugas">
+                  Tambah Petugas
+                </button>
+              </div>
           <table data-petugas>
             <tr>
               <th>No.</th>
@@ -262,7 +264,9 @@
                   <label for="password" class="form-label">Kata Sandi</label>
                   <input type="text" class="form-control" id="password" placeholder="">
                 </div>
-                <button type="submit" class="btn btn-primary">Tambah Petugas</button>
+                <div class="btn-container btn-smaller">
+                  <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
               </form>
             </div>
           </div>
@@ -302,7 +306,9 @@
                       <label for="password" class="form-label">Kata Sandi</label>
                       <input type="text" class="form-control" id="password" placeholder="">
                     </div>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <div class="btn-container btn-smaller">
+                      <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
                   </form>
             </div>
           </div>

@@ -82,16 +82,7 @@
           <i class="bi bi-box-arrow-right"></i>
           <span>Keluar</span>
         </a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="data-petugas.html">
-          <i class="bi bi-person"></i>
-          <span>Daftar Petugas</span>
-        </a>
-      </li>
-  
-  
+      </li>  
     </ul>
   </aside><!-- End Sidebar-->
 
@@ -148,8 +139,9 @@
               <td>8</td>
               <td>Alat dalam kondisi baik semua</td>
               <td>Ambil aksi dari radio button</td>
-              <td><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalLaporan">
-                <i class='fas fa-file-upload'></i> Isi Laporan </button>
+              <td>
+                <button type="button" class="btn btn-primary btn-smaller" data-bs-toggle="modal" data-bs-target="#modalLaporan">
+                <i class='fas fa-file-upload'></i> Isi Laporan
               </button></td>
             </tr>
           </table>
@@ -299,15 +291,17 @@
                       </div>
                       <div class="mb-3">
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="belum_periksa" id="belum_periksa" value="belum_periksa">
+                          <input class="form-check-input" type="radio" name="periksa_status" id="belum_periksa" value="belum_periksa">
                           <label class="form-check-label" for="belum_periksa">Belum Diperiksa</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="sudah_periksa" id="sudah_periksa" value="sudah_periksa">
+                          <input class="form-check-input" type="radio" name="periksa_status" id="sudah_periksa" value="sudah_periksa">
                           <label class="form-check-label" for="sudah_periksa">Sudah Diperiksa</label>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                      <div class="btn-container btn-smaller">
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                      </div>
                     </form>
                   </div>
                 </div>
