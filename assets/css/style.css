@@ -610,7 +610,7 @@ select{
 .table-jadwal th,
 .table-jadwal td {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #ddd;
   border: 1px solid rgb(191, 191, 191);
 }
@@ -621,8 +621,12 @@ select{
 }
 
 .nama-aspek{
-  color: #ffff;
   font-weight: bold;
+  text-align: center; 
+}
+
+.sub-nama-aspek{
+  text-align: left;
 }
 /*--------------------------------------------------------------
 # Chart
