@@ -105,23 +105,26 @@
       
         <div class="card-table table">
           <h6>Jadwal Pemeriksaan Alat Fire Protection System (FPS) dan Personil Tahun 2024</h6>
-          <div class="filter-container">
-            <div id="filter_div">
-              <label for="bulan-filter">Waktu: </label>
-              <select id="bulan-filter">
-                <option value="">Januari</option>
-                <option value="">Februari</option>
-                <option value="">Maret</option>
-                <option value="">April</option>
-                <option value="">Mei</option>
-                <option value="">Juni</option>
-                <option value="">Juli</option>
-                <option value="">Agustus</option>
-                <option value="">September</option>
-                <option value="">Oktober</option>
-                <option value="">November</option>
-                <option value="">Desember</option>
-              </select>
+
+          <div class="container-filter-button">
+            <div class="filter-container">
+              <div id="filter_div">
+                <label for="bulan-filter">Waktu: </label>
+                <select id="bulan-filter">
+                  <option value="">Januari</option>
+                  <option value="">Februari</option>
+                  <option value="">Maret</option>
+                  <option value="">April</option>
+                  <option value="">Mei</option>
+                  <option value="">Juni</option>
+                  <option value="">Juli</option>
+                  <option value="">Agustus</option>
+                  <option value="">September</option>
+                  <option value="">Oktober</option>
+                  <option value="">November</option>
+                  <option value="">Desember</option>
+                </select>
+              </div>
             
               <div id="filter_div">
                 <label for="lokasi-filter">Lokasi: </label>
@@ -135,15 +138,15 @@
                 </select>
               </div>
             </div>
-          </div>
-
-          <div class="btn-container">
+          
+            <div class="btn-container">
               <button type="button" class="btn btn-primary btn-smaller" data-bs-toggle="modal" data-bs-target="#modalTambahJadwal">
-                 Tambah Jadwal Pemeriksaan
+                Tambah Jadwal
               </button>
+            </div>
           </div>
       
-          <table>
+          <table class="tabel-jadwal">
             <tr class="header1">
               <th>No.</th>
               <th>Nama Alat</th>

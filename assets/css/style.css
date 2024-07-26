@@ -16,11 +16,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
-  color: #444444;
+  color: #000000;
 }
 
 a {
-  color: #444444;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -314,32 +315,7 @@ h6 {
   outline: none;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info-box {
-  padding: 28px 30px;
-}
 
-.contact .info-box i {
-  font-size: 38px;
-  line-height: 0;
-  color: #4154f1;
-}
-
-.contact .info-box h3 {
-  font-size: 20px;
-  color: #012970;
-  font-weight: 700;
-  margin: 20px 0 10px 0;
-}
-
-.contact .info-box p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
 
 .contact .php-email-form .loading {
   display: none;
@@ -390,21 +366,6 @@ h6 {
   transition: 0.4s;
   border-radius: 4px;
 }
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 
 /*--------------------------------------------------------------
 # Table
@@ -493,7 +454,7 @@ select{
 }
 
 .table th {
-  color: #333;
+  color: #000000;
 }
 
 
@@ -508,17 +469,17 @@ select{
   padding: 0;
 }
 
-.table-jadwal th,
-.table-jadwal td {
+.tabel-jadwal th,
+.tabel-jadwal td {
   padding: 8px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
-  border: 1px solid rgb(191, 191, 191);
+  border-bottom: 1px solid #000000;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .table-jadwal th {
   background-color: #f0f8ff;
-  color: #333;
+  color: #000000;
 }
 
 .nama-aspek{
@@ -528,6 +489,49 @@ select{
 
 .sub-nama-aspek{
   text-align: left;
+}
+
+.header-persentase {
+  background-color: #787878;
+}
+
+.tabel-alat-tl td:nth-child(3),
+.tabel-alat-tl td:nth-child(5),
+.tabel-alat-tl td:nth-child(7),
+.tabel-alat-tl td:nth-child(9),
+.tabel-alat-tl td:nth-child(11),
+.tabel-alat-tl td:nth-child(13) {
+  background-color: #99E6B3;
+}
+
+.tabel-alat-tl td:nth-child(4),
+.tabel-alat-tl td:nth-child(6),
+.tabel-alat-tl td:nth-child(8),
+.tabel-alat-tl td:nth-child(10),
+.tabel-alat-tl td:nth-child(12),
+.tabel-alat-tl td:nth-child(14) {
+  background-color: #ffdd66;
+}
+
+.tabel-alat-tl td,
+.tabel-alat-tl th {
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.tabel-kelola-alat td,
+.tabel-kelola-alat th{
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+.tabel-laporan-kondisi-alat th, 
+.tabel-laporan-kondisi-alat td,
+.tabel-dashboard th,
+.tabel-dashboard td,
+.tabel-data-petugas th,
+.tabel-data-petugas td{
+  border: 2px solid black;
 }
 /*--------------------------------------------------------------
 # Chart
@@ -679,6 +683,7 @@ button{
 .header1{
   font-weight: bold;
 }
+
 .float-right {
   float: right;
   align-items: center;
@@ -686,8 +691,8 @@ button{
 
 th, td{
   padding: 5px;
+  border: 2px solid black;
 }
-
 
 .btn-sm {
   padding: auto;
@@ -766,19 +771,39 @@ th, td{
 --------------------------------------------------------------*/
 .btn-container {
   text-align: right;
-  margin-bottom: 20px;
 }
 
 .btn-container button {
   margin-top: 0px;
+  background-color: #007bff;
+ color: #fff;
 }
 
 .btn-smaller {
 padding: 5px 10px;
 font-size: 14px;
+width: 150px;
 }
 
-     .container-export {
-       text-align: right;
-       margin-bottom: 10px;
-     }
+.btn-smaller-petugas {
+  padding: 8.5px 10px;
+  font-size: 14px;
+  width: 150px;
+}
+.btn-container-petugas{
+  padding-bottom: 20px;
+  /* padding: 5px 10px; */
+  text-align: right;
+  margin: 5;
+}
+
+.container-filter-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.filter-container {
+  flex: 1;
+}
