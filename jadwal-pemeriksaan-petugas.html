@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team Leader - Jadwal Pemeriksaan</title>
+  <title>Petugas Inspeksi - Jadwal Pemeriksaan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -50,41 +51,39 @@
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-  
-    <ul class="sidebar-nav" id="sidebar-nav">
-  
-      <li class="nav-item">
-        <a class="nav-link" href="dashboard-user.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="laporan-data-alat.html">
-          <i class="bi bi-menu-button-wide"></i>
-          <span>Laporan Data Alat</span>
-        </a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="jadwal-pemeriksaan.html">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Jadwal Pemeriksaan Alat</span></i>
-        </a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="pages-login.html">
-          <i class="bi bi-box-arrow-right"></i>
-          <span>Keluar</span>
-        </a>
-      </li>
-  
-  
-    </ul>
-  </aside><!-- End Sidebar-->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link" href="dashboard-user.html">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="jadwal-pemeriksaan-petugas.html">
+        <i class="bi bi-layout-text-window-reverse"></i>
+        <span>Jadwal Pemeriksaan Alat</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="laporan-kondisi-alat.html">
+        <i class="bi bi-journal-text"></i><span>Laporan Kondisi Alat</span></i>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="pages-login.html">
+        <i class="bi bi-box-arrow-right"></i>
+        <span>Keluar</span>
+      </a>
+    </li>
+  </ul>
+</aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
@@ -97,7 +96,7 @@
       <div class="container">
       
         <div class="card-table table">
-          <h6>Jadwal Monitoring Kesiapan Fire Protection System</h6>
+          <h6>Jadwal Pemeriksaan Alat Fire Protection System (FPS) dan Personil Kantor UP Bandar Lampung Tahun 2024</h6>
           <div class="filter-container">
             <div id="filter_div">
               <label for="bulan-filter">Waktu: </label>
@@ -115,18 +114,6 @@
                 <option value="">November</option>
                 <option value="">Desember</option>
               </select>
-            
-              <div id="filter_div">
-                <label for="lokasi-filter">Lokasi: </label>
-                <select id="lokasi-filter">
-                  <option value="">Kantor UP BL</option>
-                  <option value="">PLTD/G Tarahan</option>
-                  <option value="">PLTD Teluk Betung</option>
-                  <option value="">PLTD Tegineneng</option>
-                  <option value="">PLTA Way Besai</option>
-                  <option value="">PLTA Batu Tegi</option>
-                </select>
-              </div>
           </div>
           </div>
       
@@ -135,252 +122,217 @@
               <th>No.</th>
               <th>Nama Alat</th>
               <th>Jadwal Pemeriksaan</th>
-              <th>Nama Petugas</th>
               <th>Status</th>
             </tr>
             <tr>
               <td>1.</td>
               <td>APAT</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>2.</td>
               <td>APAR/APAB</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>3.</td>
               <td>Box Hydrant Outdoor</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>4.</td>
               <td>Box Hydrant Indoor</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>5.</td>
               <td>Jockey Pump</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>6.</td>
               <td>ELectric Pump</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>7.</td>
               <td>Emergency Diesel Pump</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>8.</td>
               <td>Emergency Sea Water Pump</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>9.</td>
               <td>Portable Pump</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>10.</td>
               <td>Sprinkle System</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>11.</td>
               <td>Gas Sppression system (CO2/Clean Agent)</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>12.</td>
               <td>Foam System</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>13.</td>
               <td>Water Spray/Water Mist</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>14.</td>
               <td>Chemical Dust Suppression</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>15.</td>
               <td>Fire Prevention System (Sergi)</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>16.</td>
               <td>Panel Alarm System</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>17.</td>
               <td>Heat Detector</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>18.</td>
               <td>Smoke Detector</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>19.</td>
               <td>Flame Detector</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>20.</td>
               <td>Gas Detector</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>21.</td>
               <td>Vaccum Dust Collector</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>22.</td>
               <td>Vaccum Truck</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>23.</td>
               <td>Fire Truck (Mobil Damkar)</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>24.</td>
               <td>Self-Contain Breathing Apparatus (SCBA)</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
                 <td>25.</td>
                 <td>Ambulance</td>
                 <td>09/01/2024</td>
-                <td>Tim Kantor UPDK</td>
+
                 <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>26.</td>
               <td>Pintu Kebakaran</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>27.</td>
               <td>Tangga Kebakaran</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>28.</td>
               <td>Tempat Berhimpun/ Assembly Point</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>29.</td>
               <td>Lampu Penerangan Darurat</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>30.</td>
               <td>Tanda Petunjuk Arah Jalan Keluar</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>31.</td>
               <td>Pressurized Fan</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>32.</td>
               <td>Smoke Extract Fan dan Intake Fan</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>33.</td>
               <td>Air Handling Unit (AHU)</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>34.</td>
               <td>Fire Damper</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
             <tr>
               <td>35.</td>
-              <td>Fire Damper</td>
+              <td>Kesiapan Personil</td>
               <td>09/01/2024</td>
-              <td>Tim Kantor UPDK</td>
               <td>Belum diperiksa</td>
             </tr>
           </table>
@@ -392,29 +344,6 @@
     <footer class="text-center">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
       </section>
       <!-- Section: Social media -->
     
@@ -424,7 +353,7 @@
     
           <div class="logo-pln">
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>PLN Nusantara Power
+              PLN Nusantara Power
             </h6>
             <img src="assets/img/logo_plnnp.jpg" alt="">
           </div>
@@ -436,14 +365,20 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Hubungi Kami
               </h6>
-              <p>
-                <a href="#!" class="text-reset">Instagram</a>
+              <p class="inline-content">
+                <a class="nav-link" href="https://www.instagram.com/plnnp.updkbandarlampung/">
+                  <i class="fab fa-instagram"></i><span>Instagram</span></i>
+                </a>
               </p>
-              <p>
-                <a href="#!" class="text-reset">Youtube</a>
+              <p class="inline-content">
+                <a class="nav-link" href="https://www.plnnusantarapower.co.id/eam/">
+                  <i class="fab fa-google"></i><span>Website</span></i>
+                </a>
               </p>
-              <p>
-                <a href="#!" class="text-reset">Website</a>
+              <p class="inline-content">
+                <a class="nav-link" href="https://www.youtube.com/@PLNNPUPDKBDL">
+                  <i class="fab fa-youtube"></i><span>Youtube</span></i>
+                </a>
               </p>
             </div>
           </div>
@@ -456,13 +391,10 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Lokasi
               </h6>
-              <p style="margin-left: 0; text-align: left;">
-                Kantor Strategis : Jl. Ketintang Baru No. 11,
-                Surabaya, Indonesia
-              </p>
-              <br>
-              <p style="margin-left: 0; text-align: left;">
-                Kantor UP BL : Jl. Raden Gunawan II, No.4, Lampung
+              <p class="inline-content">
+                <a class="nav-link" href="https://maps.app.goo.gl/7HWwjJkC25f8JDjWA">
+                  Jl. Raden Gunawan II, No.4, Lampung
+                </a>
               </p>
             </div>
           </div>

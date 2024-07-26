@@ -750,6 +750,16 @@ th, td{
   margin-left: 0;
 }
 
+.inline-content {
+  display: flex;
+  align-items: center;
+}
+
+.inline-content i {
+  margin-right: 8px;
+  /* Sesuaikan jarak antara ikon dan teks */
+}
+
 
 /*--------------------------------------------------------------
 # Modal
