@@ -723,7 +723,7 @@ th, td{
 
 .logo-pln img{
   width: 300px;
-  height: 100px;
+  height: 88px;
 }
 
 .hubungikami {
@@ -806,4 +806,8 @@ width: 150px;
 
 .filter-container {
   flex: 1;
+}
+
+.hidden-input{
+  display: none;
 }
