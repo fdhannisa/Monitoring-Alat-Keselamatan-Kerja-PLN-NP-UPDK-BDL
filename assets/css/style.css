@@ -516,13 +516,18 @@ select{
 .tabel-alat-tl td,
 .tabel-alat-tl th {
   border: 2px solid black;
-  font-weight: bold;
 }
 
 .tabel-kelola-alat td,
 .tabel-kelola-alat th{
   border: 2px solid #000;
-  font-weight: bold;
+  text-align: left;
+}
+.tabel-kelola-alat td{
+  text-align: left;
+}
+.tabel-kelola-alat th {
+  text-align: center;
 }
 
 .tabel-laporan-kondisi-alat th, 
@@ -532,6 +537,21 @@ select{
 .tabel-data-petugas th,
 .tabel-data-petugas td{
   border: 2px solid black;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.width-tabel-kelola-alat{
+  width: 600px;
+}
+.width-kolom1 {
+  width: 100px;
+}
+
+.width-kolom2{
+  width: 500px;
 }
 /*--------------------------------------------------------------
 # Chart
