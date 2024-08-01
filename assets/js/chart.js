@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
           borderWidth: 1
         },
         {
+
+          
           label: 'Maret',
           data: [98.0, 90.8, 97.0, 98.2, 90.6, 98.6],
           backgroundColor: 'rgba(255, 206, 86, 0.2)',
